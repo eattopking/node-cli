@@ -1,1 +1,2 @@
-# study-node-cli
+# yst-cli
+#用媳妇名字命名的脚手架项目
