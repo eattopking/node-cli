@@ -4,7 +4,7 @@ const Handlebars = require("handlebars");
 const rm = require("rimraf").sync;
 const _ = require("lodash");
 
-(function(metadata = {}, source, destination = ".") {
+module.exports = function(metadata = {}, source, destination = ".") {
   if (!!!source) {
     return Promise.reject(new Error(`无效的source：${source}`));
   }
@@ -37,4 +37,4 @@ const _ = require("lodash");
         }
       });
   });
-})();
+};

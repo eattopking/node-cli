@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/bin/index.js",
-  "scripts": {
-    "start": "node ./src/bin/index.js"
+  "bin": {
+    "yst": "./src/bin/index.js"
   },
   "repository": {
     "type": "git",
