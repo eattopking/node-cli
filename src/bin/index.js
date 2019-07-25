@@ -1,10 +1,15 @@
 #!/usr/bin/env node
-
+// 设置终端输出的字体颜色
 const chalk = require("chalk");
+// 设置终端输出的loadding的图标和字体
 const ora = require("ora");
+// 设置终端输出的图标
 const logSymbols = require("log-symbols");
+// 下载git代码的
 const download = require("download-git-repo");
+// node.js命令行界面指令设置库
 const program = require("commander");
+// node.js命令行界面交互库
 const inquirer = require("inquirer");
 
 program

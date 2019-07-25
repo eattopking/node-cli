@@ -6,6 +6,9 @@
   "bin": {
     "yst": "./src/bin/index.js"
   },
+  "scripts": {
+    "yst": "node ./src/bin/index.js init"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eattopking/yst-cli.git"
