@@ -11,6 +11,10 @@ const download = require("download-git-repo");
 const program = require("commander");
 // node.js命令行界面交互库
 const inquirer = require("inquirer");
+// npm 操作文件和目录的
+const fse = require('fs-extra');
+// node核心模块操作文件和目录,它和上面那个他俩合作一起就能操作文件比较好了 
+const fs = require('fs');
 
 program
   .version("1.0.0", "-v, --version", "version")
