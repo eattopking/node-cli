@@ -12,9 +12,7 @@ const program = require("commander");
 // node.js命令行界面交互库
 const inquirer = require("inquirer");
 // npm 操作文件和目录的
-const fse = require('fs-extra');
-// node核心模块操作文件和目录,它和上面那个他俩合作一起就能操作文件比较好了 
-const fs = require('fs');
+const { ensureFile, outputFile } = require("fs-extra");
 
 program
   .version("1.0.0", "-v, --version", "version")
@@ -33,10 +31,12 @@ function createProject() {
     {
       type: "input",
       name: "name",
-      message: "请输入项目名称",
-      default: "要创建的项目",
+      message: "请输入文件名称",
+      default: "要创建的文件名称",
       validate: name => {
         if (/^[a-z]+/.test(name)) {
+          let path = __dirname + "/test.js";
+          ensureFile(path);
           return true;
         } else {
           return "项目名称必须以小写字母开头";
@@ -45,11 +45,13 @@ function createProject() {
     },
     {
       type: "input",
-      name: "author",
-      message: "请输入作者",
-      default: "要创建的项目",
-      validate: author => {
-        if (author.length > 0) {
+      name: "content",
+      message: "请输入文件内容",
+      default: "要创建的文件内容",
+      validate: content => {
+        if (content.length > 0) {
+          let path = __dirname + "/test.js";
+          outputFile(path, content);
           return true;
         } else {
           return "作者名称必须长度必须大于0";

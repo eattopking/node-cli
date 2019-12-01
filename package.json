@@ -7,7 +7,8 @@
     "yst": "./src/bin/index.js"
   },
   "scripts": {
-    "yst": "node ./src/bin/index.js init"
+    "yst": "node ./src/bin/index.js init",
+    "dev": "node ./src/bin/server.js one two"
   },
   "repository": {
     "type": "git",
