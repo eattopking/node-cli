@@ -7,7 +7,7 @@ const ora = require("ora");
 const logSymbols = require("log-symbols");
 // 下载git代码的
 const download = require("download-git-repo");
-// node.js命令行界面指令设置库
+// node.js命令行指令解析库
 const program = require("commander");
 // node.js命令行界面交互库
 const inquirer = require("inquirer");
