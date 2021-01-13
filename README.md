@@ -17,4 +17,10 @@ npm version patch  更新不定版本版本  例如从1.0.0 更新到1.0.1
 调用指令更新版本， 会直接将触发的package.json中的变化commit掉， 我们只需要 进行git push  操作提交就行了
 
 我们不进行git commit 也是可以  npm publish 发布版本的
+
+
+注意点：
+1. 设置npm包私有作用域命名@后面的名字是随便取的， 不要看网上的文章瞎说必须是username， 那是不对的, 是什么都可以
+
+2.
 ```
