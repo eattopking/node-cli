@@ -22,5 +22,7 @@ npm version patch  更新不定版本版本  例如从1.0.0 更新到1.0.1
 注意点：
 1. 设置npm包私有作用域命名@后面的名字是随便取的， 不要看网上的文章瞎说必须是username， 那是不对的, 是什么都可以
 
-2.
+2. 使用lerna 发布包， 不用手动修改版本号， 需要将修改的内容提交git后， 然后在lerna publish ， lerna 会直接 将修改版本号， 然后将内容 add commit push 到git， 并且会将包npm publish 发布到 npm仓库
+
+3. lerna 就是包管理工具
 ```
