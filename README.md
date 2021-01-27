@@ -25,4 +25,6 @@ npm version patch  更新不定版本版本  例如从1.0.0 更新到1.0.1
 2. 使用lerna 发布包， 不用手动修改版本号， 需要将修改的内容提交git后， 然后在lerna publish ， lerna 会直接 将修改版本号， 然后将内容 add commit push 到git， 并且会将包npm publish 发布到 npm仓库
 
 3. lerna 就是包管理工具
+
+4. 通过download npm包拉取git 仓库代码的时候， 如果拉取github上代码可以直接拉取， 如果拉取公司私有git仓库， 需要在公司的局域网下， 或者连接公司的vpn
 ```
